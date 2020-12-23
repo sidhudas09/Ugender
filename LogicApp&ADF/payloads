@@ -1,0 +1,65 @@
+logic app 
+
+payload in adf -
+{
+"Subject":"Error Email",
+"DataFactoryName": "Test DF",
+"PipelineName": "Test pipeline",
+"Activity":  "test activity",
+"ErrorMessage": "some thing went wrong"
+}
+
+logic app payload -
+{
+    "properties": {
+        "Activity": {
+            "properties": {
+                "type": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "DataFactoryName": {
+            "properties": {
+                "type": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "ErrorMessage": {
+            "properties": {
+                "type": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "PipelineName": {
+            "properties": {
+                "type": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "Subject": {
+            "properties": {
+                "type": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "To": {
+            "properties": {
+                "type": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "type": "object"
+}
